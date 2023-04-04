@@ -1,6 +1,6 @@
 .filter {
   transition: .1s;
-  cursor: pointer;
+  cursor: default;
 }
 .filter:hover {
   transform: scale(105%);

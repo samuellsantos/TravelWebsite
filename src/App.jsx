@@ -5,7 +5,7 @@ import { Filter } from './components/Main/Filters/Filter';
 
 export function App() {
   return (
-    <main className="w-full h-screen bg-[url('/src/assets/background.png')] bg-cover">
+    <main className="w-full h-screen bg-[url('/src/assets/background.png')] bg-cover bg-center">
       <Header />
       <Main />
     </main>

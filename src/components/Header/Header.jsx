@@ -7,7 +7,7 @@ import { BsChevronCompactRight } from 'react-icons/bs';
 export const Header = () => {
   return (
     <>
-      <header className="bg-[#0b1d27b9] text-white flex items-center justify-between h-12 px-52">
+      <header className="xl:px-52 bg-[#0b1d27b9] text-white flex items-center justify-between h-12  lg:px-2 md:px-2">
         {/* CONTACT SECTION */}
         <section className="flex items-center gap-x-3">
           <FaRegEnvelope />
@@ -24,7 +24,7 @@ export const Header = () => {
       </header>
 
       {/* NAVBAR */}
-      <nav className="mx-52 mt-5 border-2 border-white rounded flex justify-between items-center text-white p-2">
+      <nav className="xl:mx-52 mt-5 border-2 border-white rounded flex justify-between items-center text-white p-2 bg-transparent-black2 lg:mx-2 md:mx-2">
         <div className="logo">
           <h1 className="text-lg font-bold">TRAVEL</h1>
         </div>
