@@ -1,5 +1,10 @@
 import React from 'react';
+import { Header } from './components/Header/Header';
 
 export function App() {
-  return <h1 className="text-3xl font-bold underline text">Teste</h1>;
+  return (
+    <main className="w-full h-screen bg-[url('/src/assets/background.png')] bg-cover">
+      <Header />
+    </main>
+  );
 }
