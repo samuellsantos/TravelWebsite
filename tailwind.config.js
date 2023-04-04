@@ -11,6 +11,10 @@ export default {
         'dark-blue': '##0b1d27',
         cyan: '#00C2C5',
         'cyan-hover': '#00c2c5d1',
+        'transparent-black': '#00000097',
+      },
+      fontFamily: {
+        alaktra: ['Alkatra', 'cursive'],
       },
     },
   },

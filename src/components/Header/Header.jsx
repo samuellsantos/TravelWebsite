@@ -1,4 +1,5 @@
 import React from 'react';
+import './header.css';
 import { FaUserCircle, FaRegEnvelope } from 'react-icons/fa';
 import { FiPhone } from 'react-icons/fi';
 import { BsChevronCompactRight } from 'react-icons/bs';
