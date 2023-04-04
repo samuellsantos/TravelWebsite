@@ -1,0 +1,7 @@
+.filter {
+  transition: .1s;
+  cursor: pointer;
+}
+.filter:hover {
+  transform: scale(105%);
+}

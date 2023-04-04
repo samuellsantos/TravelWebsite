@@ -12,6 +12,7 @@ export default {
         cyan: '#00C2C5',
         'cyan-hover': '#00c2c5d1',
         'transparent-black': '#00000097',
+        'transparent-white': '#ffffff26',
       },
       fontFamily: {
         alaktra: ['Alkatra', 'cursive'],
