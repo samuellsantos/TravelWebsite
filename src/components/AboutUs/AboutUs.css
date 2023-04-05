@@ -1,0 +1,5 @@
+.paperPlane {
+  position: absolute;
+  right: 400px;
+  z-index: 0;
+}

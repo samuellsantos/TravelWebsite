@@ -34,7 +34,6 @@ export const Header = () => {
             <li className="navLinks">Destinations</li>
             <li className="navLinks">Packages</li>
             <li className="navLinks">Tour Guides</li>
-            <li className="navLinks">Tour Guides</li>
             <li className="navLinks">Blogs</li>
             <li className="navLinks">Contact</li>
             <li>

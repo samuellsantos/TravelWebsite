@@ -14,6 +14,7 @@ export default {
         'transparent-black': '#00000097',
         'transparent-black2': '#00000052',
         'transparent-white': '#ffffff26',
+        blue: '#003044',
       },
       fontFamily: {
         marko: ['Marko One'],
