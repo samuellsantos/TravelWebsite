@@ -37,7 +37,7 @@ const cards = [
 
 export const BlogCard = () => {
   return (
-    <section className="flex w-full justify-center items-center gap-20 flex-wrap">
+    <section className="flex w-full justify-center items-center gap-20 flex-wrap mb-16">
       {cards.map((card) => (
         <div key={card.title}>
           <div className="relative w-96">

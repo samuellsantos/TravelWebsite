@@ -1,5 +1,6 @@
 import React from 'react';
 import { BlogCard } from './BlogCard';
+import { Button } from '../../components/Button/Button';
 
 export const OurBlogs = () => {
   return (
@@ -13,6 +14,7 @@ export const OurBlogs = () => {
         dreams
       </p>
       <BlogCard />
+      <Button>View All</Button>
     </section>
   );
 };
