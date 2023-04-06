@@ -8,7 +8,7 @@ import { MdOutlineSportsBaseball } from 'react-icons/md';
 
 export const Filters = () => {
   return (
-    <section className="mx-52 mt-24 flex justify-center items-center gap-x-14 lg:mx-2 md:mx-2">
+    <section className="mt-24 flex justify-center items-center gap-x-14 lg:mx-2 md:mx-2">
       <Filter filter="Relax" icon={<BiWine size={40} />} />
       <Filter filter="Cruise" icon={<RiShipLine size={40} />} />
       <Filter filter="Sport" icon={<MdOutlineSportsBaseball size={40} />} />

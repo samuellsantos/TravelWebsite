@@ -7,14 +7,14 @@ import '../AboutUs.css';
 export const DiscoverAdventure = () => {
   return (
     <div>
-      <section className=" text-white flex  justify-center items-center gap-x-9 w-full ">
+      <section className=" text-white flex justify-center gap-x-9 w-full ">
         <YoutubeVideo />
-        <div className="w-2/4 z-50">
+        <div className="w-1/4 z-50">
           <h2 className="text-3xl font-semibold mb-7">About Us</h2>
           <h1 className="text-5xl text-cyan font-semibold mb-7">
             Discover Your Next Adventure
           </h1>
-          <p className="text-justify m-0 w-3/4 mb-7">
+          <p className="text-justify m-0 w-4/4 mb-7">
             Our website offers a wide range of travel options, including
             flights, hotels, car rentals, and vacation packages. With our
             easy-to-use interface, you can quickly search and book your travel

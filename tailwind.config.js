@@ -5,9 +5,11 @@ export default {
     extend: {
       backgroundImage: {
         hero: "url('./src/assets/background.png')",
+        holiday: "url('./src/assets/backgroundHolidaySection.jpg')",
       },
       colors: {
         'dark-blue-opacity': '##0b1d27b9',
+        'light-blue': '##0d3d57',
         'dark-blue': '##0b1d27',
         cyan: '#00C2C5',
         'cyan-hover': '#00c2c5d1',

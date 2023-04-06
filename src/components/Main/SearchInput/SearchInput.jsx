@@ -3,8 +3,8 @@ import { BsSearch } from 'react-icons/bs';
 
 export const SearchInput = () => {
   return (
-    <div className="text-white mx-52 mt-8 flex justify-center">
-      <section className=" relative w-72">
+    <div className="text-white mt-8 flex justify-center items-center">
+      <section className="relative w-72">
         <input
           type="text"
           placeholder="Choose Your Destination..."

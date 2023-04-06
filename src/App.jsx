@@ -4,6 +4,8 @@ import { Main } from './components/Main/Main';
 import { AboutUs } from './components/AboutUs/AboutUs';
 import './App.css';
 import { OurDestination } from './components/OurDestination/OurDestination';
+import { Holiday } from './components/Holiday/Holiday';
+import { OurBlogs } from './components/OurBlogs/OurBlogs';
 
 export function App() {
   return (
@@ -12,12 +14,18 @@ export function App() {
         <Header />
         <Main />
       </main>
-      <div className="AboutUs">
+      <section className="AboutUs">
         <AboutUs />
-      </div>
-      <div className="OurDestinations">
+      </section>
+      <section className="OurDestinations">
         <OurDestination />
-      </div>
+      </section>
+      <section className="holiday">
+        <Holiday />
+      </section>
+      <section className="ourBlogs">
+        <OurBlogs />
+      </section>
     </>
   );
 }
