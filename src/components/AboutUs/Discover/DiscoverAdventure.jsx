@@ -7,7 +7,7 @@ import '../AboutUs.css';
 export const DiscoverAdventure = () => {
   return (
     <div>
-      <section className=" text-white flex  justify-center gap-x-9 w-full ">
+      <section className=" text-white flex  justify-center items-center gap-x-9 w-full ">
         <YoutubeVideo />
         <div className="w-2/4 z-50">
           <h2 className="text-3xl font-semibold mb-7">About Us</h2>

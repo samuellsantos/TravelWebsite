@@ -7,23 +7,24 @@ import img5 from '../../../assets/img5.jpg';
 import img6 from '../../../assets/img6.jpg';
 import img7 from '../../../assets/img7.jpg';
 import img8 from '../../../assets/img8.jpg';
+import './Photos.css';
 
 const images = [
   {
     id: 1,
-    src: img4,
+    src: img1,
   },
   {
     id: 2,
-    src: img8,
+    src: img4,
   },
   {
     id: 3,
-    src: img6,
+    src: img3,
   },
   {
     id: 4,
-    src: img1,
+    src: img6,
   },
   {
     id: 5,
@@ -31,7 +32,7 @@ const images = [
   },
   {
     id: 6,
-    src: img3,
+    src: img2,
   },
   {
     id: 7,
@@ -39,15 +40,15 @@ const images = [
   },
   {
     id: 8,
-    src: img2,
+    src: img6,
   },
 ];
 
 export const Photos = () => {
   return (
-    <section className=" grid gap-8 grid-cols-4  grid-rows-4 mt-20 flex-wrap">
+    <section className="containerPhoto mt-20">
       {images.map((image) => (
-        <div key={image.id}>
+        <div key={image.id} className="photo">
           <img src={image.src} alt="Imagens" className={`rounded`} />
         </div>
       ))}

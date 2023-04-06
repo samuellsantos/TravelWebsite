@@ -4,7 +4,7 @@ import { Photos } from './Photos/Photos';
 
 export const AboutUs = () => {
   return (
-    <section className="h-full bg-[#0b1d27] px-52 pt-28">
+    <section className="h-full bg-[#0b1d27] px-52 pb-5 pt-16">
       <DiscoverAdventure />
       <Photos />
     </section>

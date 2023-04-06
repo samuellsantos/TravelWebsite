@@ -1,0 +1,14 @@
+.containerPhoto {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-items: center;
+}
+.photo:nth-child(6) {
+  padding-top: 50px;
+}
+
+
+
