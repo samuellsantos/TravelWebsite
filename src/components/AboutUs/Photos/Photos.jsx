@@ -46,10 +46,10 @@ const images = [
 
 export const Photos = () => {
   return (
-    <section className="containerPhoto mt-20">
+    <section className="containerPhoto pt-36">
       {images.map((image) => (
         <div key={image.id} className="photo">
-          <img src={image.src} alt="Imagens" className={`rounded`} />
+          <img src={image.src} alt="Imagens" className={`rounded w-full`} />
         </div>
       ))}
     </section>
