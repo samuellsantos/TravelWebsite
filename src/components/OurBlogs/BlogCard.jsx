@@ -64,7 +64,7 @@ export const BlogCard = () => {
               </p>
               <p className="flex items-center gap-x-2">
                 <AiOutlineComment />{' '}
-                <span className="text-white">Comments</span>
+                <span className="text-white">7 Comments</span>
               </p>
             </div>
             <h3 className="text-2xl font-semibold mb-1 text-cyan">
