@@ -44,10 +44,10 @@ export const BlogCard = () => {
             <img
               src={card.src}
               alt={card.type}
-              className="rounded-tl rounded-tr"
+              className="rounded-tl rounded-tr cursor-pointer"
             />
             <p className="flex items-center justify-between bg-[#00000097] absolute bottom-0 w-full p-2">
-              Life Style
+              {card.type}
               <span className="flex items-center gap-x-2">
                 <AiOutlineCalendar />
                 {card.date}
@@ -67,7 +67,7 @@ export const BlogCard = () => {
                 <span className="text-white">7 Comments</span>
               </p>
             </div>
-            <h3 className="text-2xl font-semibold mb-1 text-cyan">
+            <h3 className="text-2xl font-semibold mb-1 text-cyan cursor-pointer">
               {card.title}
             </h3>
             <p>{card.about}</p>
