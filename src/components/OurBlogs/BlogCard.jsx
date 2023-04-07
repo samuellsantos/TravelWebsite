@@ -19,7 +19,7 @@ const cards = [
   },
   {
     src: image2,
-    type: 'Advenure',
+    type: 'Adventure',
     date: 'Jan 2, 2023',
     title: 'Things to know before traveling to the big Island',
     about:
@@ -37,7 +37,7 @@ const cards = [
 
 export const BlogCard = () => {
   return (
-    <section className="flex w-full justify-center items-center gap-20 flex-wrap mb-16">
+    <section className="flex w-full justify-center items-center gap-20 flex-wrap mb-8">
       {cards.map((card) => (
         <div key={card.title}>
           <div className="relative w-96">

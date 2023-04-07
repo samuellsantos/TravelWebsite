@@ -50,29 +50,38 @@ const cardsPromotion = [
 
 export const PromotionsCard = () => {
   return (
-    <div className="flex gap-x-10">
+    <div className="flex justify-center items-center gap-10 pt-12 flex-wrap">
       {cardsPromotion.map((card) => (
-        <div key={card.name}>
-          <div className="relative overflow-hidden ">
+        <div
+          key={card.name}
+          className={`${
+            card.name === 'Venice' ? 'border-2 border-white shadow-white' : ''
+          }`}
+        >
+          <div className={`relative overflow-hidden`}>
             <img
               src={card.src}
               alt={card.name}
-              className="w-96 rounded-tr rounded-tl"
+              className="w-80 rounded-tr rounded-tl"
             />
-            <div className="absolute top-40 left-64">{card.icon}</div>
+            <div className="absolute top-32 left-56">{card.icon}</div>
           </div>
-          <div className="bg-[#0d3d57]">
-            <p className="flex items-center justify-between p-4 font-bold text-2xl  border-b-2 border-[#0b1d27]">
+          <div className="bg-[#0d3d57] w-80 ">
+            <p className="flex items-center justify-between p-4 font-bold text-2xl  border-b-2 border-[#ffffff26]">
               {card.name}{' '}
               <span className="flex items-center text-xl">
                 <GoLocation />
                 {card.local}
               </span>
             </p>
-            <p>
+            <p className="flex justify-between items-center px-4 py-2 border-b-2 border-[#ffffff26]">
               Historical <br /> {card.historical.type}{' '}
-              <span>{card.historical.price}</span>
+              <span className="text-xl font-bold">{card.historical.price}</span>
             </p>
+            <p className="w-full p-4">{card.text}</p>
+            <section className="flex items-center justify-center pt-4 pb-8">
+              <Button>Details</Button>
+            </section>
           </div>
         </div>
       ))}
