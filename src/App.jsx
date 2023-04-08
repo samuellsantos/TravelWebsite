@@ -17,25 +17,25 @@ export function App() {
         <Header />
         <Main />
       </main>
-      <section className="AboutUs">
+      <section className="AboutUs" id="aboutUs">
         <AboutUs />
       </section>
-      <section className="OurDestinations">
+      <section className="OurDestinations" id="destinations">
         <OurDestination />
       </section>
       <section className="holiday">
         <Holiday />
       </section>
-      <section className="ourBlogs">
+      <section className="ourBlogs" id="blogs">
         <OurBlogs />
       </section>
-      <section className="promotions">
+      <section className="promotions" id="packages">
         <Promotions />
       </section>
       <section className="ClientTestimonial">
         <ClientTestimonial />
       </section>
-      <section className="footer">
+      <section className="footer" id="contact">
         <Footer />
       </section>
     </>

@@ -3,6 +3,7 @@ import './header.css';
 import { FaUserCircle, FaRegEnvelope } from 'react-icons/fa';
 import { FiPhone } from 'react-icons/fi';
 import { BsChevronCompactRight } from 'react-icons/bs';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 export const Header = () => {
   return (
@@ -30,12 +31,58 @@ export const Header = () => {
         </div>
         <div className="navItems">
           <ul className="flex gap-x-5 items-center ">
-            <li className="navLinks">About Us</li>
-            <li className="navLinks">Destinations</li>
-            <li className="navLinks">Packages</li>
+            <Link
+              activeClass="active"
+              to="aboutUs"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <li className="navLinks">About Us</li>
+            </Link>
+
+            <Link
+              activeClass="active"
+              to="destinations"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <li className="navLinks">Destinations</li>
+            </Link>
+            <Link
+              activeClass="active"
+              to="packages"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+            >
+              <li className="navLinks">Packages</li>
+            </Link>
             <li className="navLinks">Tour Guides</li>
-            <li className="navLinks">Blogs</li>
-            <li className="navLinks">Contact</li>
+            <Link
+              activeClass="active"
+              to="blogs"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+            >
+              <li className="navLinks">Blogs</li>
+            </Link>
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+            >
+              <li className="navLinks">Contact</li>
+            </Link>
             <li>
               <a
                 href="#"
