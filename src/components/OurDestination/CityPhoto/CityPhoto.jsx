@@ -5,7 +5,6 @@ import turkey from '../../../assets/city/turkey.jpg';
 import riodejaneiro from '../../../assets/city/riodejaneiro.jpg';
 import newyork from '../../../assets/city/newyork.jpg';
 import norway from '../../../assets/city/norway.jpg';
-import './CityPhoto.css';
 import { Button } from '../../../components/Button/Button';
 
 const cities = [
@@ -53,11 +52,11 @@ export const CityPhoto = () => {
   }
 
   return (
-    <section className="grid grid-cols-3 gap-7 pb-40 pt-12">
+    <section className="xl:grid-cols-3 grid pb-40 gap-12 pt-12 lg:grid-cols-2 sm:grid-cols-1">
       {cities.map((city) => (
         <div
           key={city.name}
-          className="w-96 h-64 relative"
+          className="xl:w-96 xl:h-64 lg:w-96 lg:h-64 md:w-96 md:h-64 relative sm:w-80 w-80 overflow-hidden"
           onMouseEnter={() => toggleShowDetails(city.name)}
           onMouseLeave={() => setShowDetails(null)}
         >
@@ -69,7 +68,7 @@ export const CityPhoto = () => {
             </div>
           )}
           {showDetails === city.name && (
-            <div className="bg-[#00000052] absolute w-96 h-64 rounded flex justify-center items-center flex-col gap-y-4 top-0 left-0">
+            <div className="bg-[#00000052] absolute md:w-96 h-64 mb-8 rounded flex justify-center items-center flex-col gap-y-4 top-0 left-0 sm:w-80 w-80">
               <h2 className="font-bold">{city.packages}</h2>
               <h3 className="font-bold">{city.name}</h3>
               <Button>View Destination</Button>

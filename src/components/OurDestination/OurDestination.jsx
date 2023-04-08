@@ -8,7 +8,9 @@ export const OurDestination = () => {
       <h1 className="text-5xl text-cyan font-semibold mb-7">
         Our Destinations
       </h1>
-      <CityPhoto />
+      <div className="flex justify-center items-center w-full">
+        <CityPhoto />
+      </div>
     </section>
   );
 };
