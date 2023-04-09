@@ -1,12 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Meu Projeto</title>
-</head>
 <body>
   <h1>TravelWebsite</h1>
-  <p>🚀 Projeto incrível criado por você!</p>
+  <p>🚀 Meu primeiro projeto usando tailwind</p>
 
   <h2>Como iniciar o projeto</h2>
 
@@ -57,6 +52,6 @@
 
   <hr>
 
-  <p>Feito com ❤️ por <a href="https://github.com/seu-usuario">seu nome</a>.</p>
+  <p>Feito com ❤️ por <a href="https://github.com/samuellsantos">Samuell Santos</a>.</p>
 </body>
 </html>
