@@ -13,9 +13,10 @@ import { Footer } from './components/Footer/Footer';
 export function App() {
   return (
     <>
-      <main className="w-full h-screen bg-[url('/src/assets/background.png')] bg-cover bg-center overflow-x-hidden">
+      <main className="w-full bg-[url('/src/assets/background.png')] bg-cover bg-center overflow-x-hidden relative">
         <Header />
         <Main />
+        <div className="gradient"></div>
       </main>
       <section className="AboutUs" id="aboutUs">
         <AboutUs />

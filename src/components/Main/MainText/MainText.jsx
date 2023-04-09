@@ -11,7 +11,6 @@ export const MainText = () => {
         Welcome to our travel website! We are excited to help you plan your next
         adventure <br /> add create unforgettable memories
       </p>
-      <div className="gradient"></div>
     </section>
   );
 };

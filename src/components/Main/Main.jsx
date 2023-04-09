@@ -5,7 +5,7 @@ import { Filters } from './Filters/Filters';
 
 export const Main = () => {
   return (
-    <div>
+    <div className="h-full">
       <MainText />
       <SearchInput />
       <Filters />

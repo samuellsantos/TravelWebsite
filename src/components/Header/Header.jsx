@@ -6,11 +6,25 @@ import { BsChevronCompactRight } from 'react-icons/bs';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 export const Header = () => {
+  const [windowSize, setWindowSize] = React.useState(undefined);
+
+  React.useEffect(() => {
+    function handleResize() {
+      setWindowSize(window.innerWidth);
+    }
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => window.removeEventListener('resize', handleResize);
+  });
   return (
     <>
-      <header className="xl:px-52 bg-[#0b1d27b9] text-white flex items-center justify-between h-12  lg:px-2 md:px-2">
+      <header
+        className={`xl:px-52 bg-[#0b1d27b9] text-white flex items-center  lg:px-2 md:px-2 flex-wrap ${
+          windowSize <= 768 ? 'justify-center h-auto' : 'justify-between h-12'
+        }`}
+      >
         {/* CONTACT SECTION */}
-        <section className="flex items-center gap-x-3">
+        <section className={`flex items-center gap-x-3 mr-4`}>
           <FaRegEnvelope />
           <span>hellotravel@gmail.com</span>
           <FiPhone />
@@ -25,12 +39,20 @@ export const Header = () => {
       </header>
 
       {/* NAVBAR */}
-      <nav className="xl:mx-52 mt-5 border-2 border-white rounded flex justify-between items-center text-white p-2 bg-transparent-black2 lg:mx-2 md:mx-2">
+      <nav
+        className={`mt-5 border-2 border-white rounded flex  items-center flex-wrap text-white p-2 bg-transparent-black2 md:mx-2 gap-8 ${
+          windowSize <= 768 ? 'justify-center' : 'justify-between'
+        }`}
+      >
         <div className="logo">
           <h1 className="text-lg font-bold">TRAVEL</h1>
         </div>
-        <div className="navItems">
-          <ul className="flex gap-x-5 items-center ">
+        <div className="flex text-white">
+          <ul
+            className={`flex items-center gap-8 flex-wrap ${
+              windowSize <= 768 ? 'justify-center' : 'justify-between'
+            }`}
+          >
             <Link
               activeClass="active"
               to="aboutUs"
