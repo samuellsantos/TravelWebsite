@@ -17,9 +17,9 @@ export const Header = () => {
     return () => window.removeEventListener('resize', handleResize);
   });
   return (
-    <>
+    <section className="flex flex-col justify-center items-center">
       <header
-        className={`xl:px-52 bg-[#0b1d27b9] text-white flex items-center  lg:px-2 md:px-2 flex-wrap ${
+        className={`w-full bg-[#0b1d27b9] text-white flex items-center md:px-20 flex-wrap ${
           windowSize <= 768 ? 'justify-center h-auto' : 'justify-between h-12'
         }`}
       >
@@ -40,7 +40,7 @@ export const Header = () => {
 
       {/* NAVBAR */}
       <nav
-        className={`mt-5 border-2 border-white rounded flex  items-center flex-wrap text-white p-2 bg-transparent-black2 md:mx-2 gap-8 ${
+        className={`w-11/12 mt-5 border-2 border-white rounded flex  items-center flex-wrap text-white p-2 bg-transparent-black2 gap-8 md:mx-8 ${
           windowSize <= 768 ? 'justify-center' : 'justify-between'
         }`}
       >
@@ -116,6 +116,6 @@ export const Header = () => {
           </ul>
         </div>
       </nav>
-    </>
+    </section>
   );
 };
